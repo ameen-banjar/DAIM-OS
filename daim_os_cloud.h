@@ -105,7 +105,7 @@ struct daim_cl_msg_data_up_hosts {
     uint32_t transaction_id;            /* facilitate pairing between messages */
     uint64_t id;                        /* id of the DAIM switch */
     uint64_t num_of_hosts;              /* number of hosts */
-    struct daim_host hosts[];           /* hosts array */
+    uint8_t hosts[];                    /* packed daim_host records, each followed by its ports */
 };
 
 /*
@@ -143,7 +143,7 @@ struct daim_cl_msg_data_reply_links {
 struct daim_cl_msg_data_reply_hosts {
     uint32_t transaction_id;            /* facilitate pairing between messages */
     uint64_t num_of_hosts;              /* number of hosts */
-    struct daim_host hosts[];           /* hosts array */
+    uint8_t hosts[];                    /* packed daim_host records, each followed by its ports */
 };
 
 /* DAIM OS cloud header message structure */
@@ -152,5 +152,7 @@ struct daim_cl_message {
     uint8_t type;       /* one of the DCP_ constants */
     uint8_t data[];     /* buffer formatted with one of daim_cl_msg_data_* structures */
 };
+
+#pragma pack(pop)
 
 #endif /* daim_os_cloud.h */
