@@ -1,4 +1,6 @@
 # DAIM-OS
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21426560.svg)](https://doi.org/10.5281/zenodo.21426560)
+
 DAIM-OS is a network switch operating system, designed for better management of packets forwarding through a network infrastructure, by providing precise control over network flows in a network.
 
 This repository contains the platform-independent C interface specification for DAIM-OS. It defines the application API, the device-manager System API, and the proof-of-concept DAIM cloud wire protocol described in the DAIM-OS dissertation. It does not contain a complete operating-system implementation.
