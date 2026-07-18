@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-0871-5153"
 version: 1.0.0
 date-released: 2026-07-18
+doi: 10.5281/zenodo.21426560
 license: Apache-2.0
 repository-code: "https://github.com/ameen-banjar/DAIM-OS"
 abstract: >-

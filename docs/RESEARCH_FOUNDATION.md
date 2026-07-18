@@ -10,6 +10,7 @@ OpenFlow networks as the case study*, University of Technology Sydney, Spring
 
 Public records:
 
+- [DAIM-OS v1.0.0 archived on Zenodo](https://doi.org/10.5281/zenodo.21426560)
 - [Dissertation record and full-text access on ProQuest](https://www.proquest.com/openview/8808b30ae9e4ed019823530394450930/1?cbl=2026366&diss=y)
 - [Ameen Banjar's Google Scholar profile](https://scholar.google.com/citations?user=kjW-MxkAAAAJ&hl=en)
 
