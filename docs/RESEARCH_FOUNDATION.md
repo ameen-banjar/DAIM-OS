@@ -8,6 +8,15 @@ environment for building autonomy in distributed electronic environments - using
 OpenFlow networks as the case study*, University of Technology Sydney, Spring
 2016.
 
+Public records:
+
+- [Dissertation record and full-text access on ProQuest](https://www.proquest.com/openview/8808b30ae9e4ed019823530394450930/1?cbl=2026366&diss=y)
+- [Ameen Banjar's Google Scholar profile](https://scholar.google.com/citations?user=kjW-MxkAAAAJ&hl=en)
+
+The direct `media.proquest.com` download URL is intentionally not used because it
+is a temporary signed delivery link; the ProQuest record above is the stable public
+reference.
+
 Page references below use the printed dissertation page numbers.
 
 ## Definition of DAIM
