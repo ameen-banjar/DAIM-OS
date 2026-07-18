@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use the DAIM-OS interface specification, please cite this software and its accompanying dissertation."
+title: "DAIM-OS: Distributed Active Information Model Operating System Specification"
+type: software
+authors:
+  - family-names: Banjar
+    given-names: Ameen Reda
+    orcid: "https://orcid.org/0000-0002-0871-5153"
+version: 1.0.0
+date-released: 2026-07-18
+license: Apache-2.0
+repository-code: "https://github.com/ameen-banjar/DAIM-OS"
+abstract: >-
+  A platform-independent C interface specification for a network forwarding
+  device operating system based on the Distributed Active Information Model.
+keywords:
+  - autonomic network management
+  - software-defined networking
+  - OpenFlow
+  - distributed control
+  - network operating system
+preferred-citation:
+  type: thesis
+  thesis-type: "PhD thesis"
+  title: "Autonomic Management of Software Defined Networks"
+  authors:
+    - family-names: Banjar
+      given-names: Ameen Reda
+      orcid: "https://orcid.org/0000-0002-0871-5153"
+  year: 2016
+  url: "https://www.proquest.com/openview/8808b30ae9e4ed019823530394450930/1?cbl=2026366&diss=y"
+  institution:
+    name: University of Technology Sydney
