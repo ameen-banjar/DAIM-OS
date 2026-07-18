@@ -48,6 +48,7 @@ enum daim_switch_capability {
     STP = 1 << 0,  		/* 802.1d spanning tree */
     IP_REASM = 1 << 1   /* Can reassemble IP fragments */
 };
+#define DAIM_SWITCH_CAPABILITY_DEFINED 1
 
 /* DAIM OS state on the switch */
 enum daim_os_state {
@@ -240,6 +241,7 @@ struct packet_action_dl_addr {
 struct packet_action_nw_addr {
     uint16_t type;          /* PACKET_SET_TW_SRC/DST */
     uint32_t nw_addr;       /* IP address */
+    uint8_t pad[2];         /* align all packet actions to 64 bits */
 };
 
 /* action structure for PACKET_SET_TP_SRC/DST */
@@ -445,12 +447,12 @@ struct switch_link_config_table_entry {
     returns zero if successful
     one is returned on failure
 */
-extern uint16_t daim_init ();
+extern uint16_t daim_init (void);
 
 /*
     cleans up all the resources associated with a DAIM application
 */
-extern void daim_quit ();
+extern void daim_quit (void);
 
 /* 
     writes an entry to one of the DAIM OS network management tables found in daim_table

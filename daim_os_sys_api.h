@@ -34,11 +34,14 @@ enum daim_switch_management {
 	IOCTL_PORT_CONTROL
 };
 
-/* Capabilities of DAIM OS switch */
+/* Capabilities of DAIM OS switch. Shared with the application API. */
+#ifndef DAIM_SWITCH_CAPABILITY_DEFINED
 enum daim_switch_capability {
     STP = 1 << 0,  		/* 802.1d spanning tree */
     IP_REASM = 1 << 1   /* Can reassemble IP fragments */
 };
+#define DAIM_SWITCH_CAPABILITY_DEFINED 1
+#endif
 
 /* to be used for encoding or decoding power in switch_port_control and switch_port_state structure */
 enum device_power {
@@ -48,8 +51,8 @@ enum device_power {
 
 /* to be used for encoding or decoding link in switch_port_state structure */
 enum port_link {
-    LINK_UP = 0xfa,
-    LINK_DOWN = 0xfb
+    DEVICE_PORT_LINK_UP = 0xfa,
+    DEVICE_PORT_LINK_DOWN = 0xfb
 };
 
 /* to be used for encoding or decoding stp in switch_port_control and switch_port_state structure */
@@ -79,7 +82,7 @@ struct switch_info {
     uint8_t serial_number[SERIAL_NUM_LEN];				/* serial number for DAIM OS switch */
 	uint32_t vendor_id;								    /* vendor id of DAIM OS switch */
 	uint32_t product_id;							    /* product id of DAIM OS switch */
-	uint16_t ports;									    /* number of ports in the DAIM OS switch */
+	uint16_t num_of_ports;							    /* number of ports in the DAIM OS switch */
 	uint16_t switch_capabilities;					    /* bitmap of daim_switch_capability flags */
     struct switch_port ports[];                         /* ports array */
 };
@@ -102,6 +105,8 @@ struct switch_port_control {
 	uint8_t duplex;
 	uint64_t speed;
 };
+
+#pragma pack(pop)
 
 /* System API for DAIM OS (network device software interface for DAIM OS) */
 
