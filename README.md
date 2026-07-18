@@ -3,6 +3,14 @@ DAIM-OS is a network switch operating system, designed for better management of 
 
 This repository contains the platform-independent C interface specification for DAIM-OS. It defines the application API, the device-manager System API, and the proof-of-concept DAIM cloud wire protocol described in the DAIM-OS dissertation. It does not contain a complete operating-system implementation.
 
+## What is DAIM?
+
+DAIM stands for **Distributed Active Information Model**. It is a model for autonomic management of distributed networks in which forwarding devices collect and exchange information, make local decisions, and adapt their behaviour to changing requirements. The dissertation positions DAIM as a distributed combination of a network operating system and control plane, with control functions and agents placed closer to each switch instead of depending entirely on one central controller.
+
+DAIM-OS is the proposed forwarding-device abstraction for that model. It hides low-level hardware details behind a high-level API so network applications can inspect state, configure forwarding behaviour, and work toward self-configuration, self-healing, self-optimisation, and self-protection.
+
+The [research foundation](docs/RESEARCH_FOUNDATION.md) documents the dissertation definition, objectives, contributions, validation evidence, scope, and limitations represented by this repository.
+
 ## Headers
 
 - `daim_os_api.h` defines DAIM tables, packet matching and actions, application callbacks, and the application-facing table API.
@@ -14,3 +22,7 @@ All wire structures are packed. Multi-byte values require an implementation-defi
 ## Validation
 
 Run `make check` to compile a translation unit that includes all three public headers and to verify the intended 64-bit packet-action layout.
+
+## Research source
+
+This specification accompanies Ameen Reda Banjar's 2016 PhD dissertation, *Autonomic Management of Software Defined Networks: DAIM can provide the environment for building autonomy in distributed electronic environments - using OpenFlow networks as the case study*, University of Technology Sydney.
