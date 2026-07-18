@@ -26,3 +26,10 @@ Run `make check` to compile a translation unit that includes all three public he
 ## Research source
 
 This specification accompanies Ameen Reda Banjar's 2016 PhD dissertation, *Autonomic Management of Software Defined Networks: DAIM can provide the environment for building autonomy in distributed electronic environments - using OpenFlow networks as the case study*, University of Technology Sydney.
+
+- ORCID: [0000-0002-0871-5153](https://orcid.org/0000-0002-0871-5153)
+- Citation metadata: [`CITATION.cff`](CITATION.cff)
+
+## License
+
+DAIM-OS is licensed under the [Apache License 2.0](LICENSE).
