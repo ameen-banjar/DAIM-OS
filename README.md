@@ -1,9 +1,34 @@
 # DAIM-OS
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21426560.svg)](https://doi.org/10.5281/zenodo.21426560)
 
+> **Archival specification repository**
+>
+> This repository preserves the DAIM-OS v1.0.0 interface specification.
+> Contemporary implementations and paper-specific experimental artifacts are
+> maintained in separate repositories.
+
 DAIM-OS is a network switch operating system, designed for better management of packets forwarding through a network infrastructure, by providing precise control over network flows in a network.
 
 This repository contains the platform-independent C interface specification for DAIM-OS. It defines the application API, the device-manager System API, and the proof-of-concept DAIM cloud wire protocol described in the DAIM-OS dissertation. It does not contain a complete operating-system implementation.
+
+## Repository scope
+
+This repository contains the historical interface specification only.
+Paper-specific implementations, experiments, raw data, and manuscripts are
+versioned independently to preserve provenance and prevent evidence overlap.
+
+## Related contemporary artifacts
+
+### Paper 1 - Executable Packet-In Artifact
+
+- Repository: [ameen-banjar/daim-os-packetin-artifact](https://github.com/ameen-banjar/daim-os-packetin-artifact)
+- Version: `v1.1.0`
+- Version DOI: [10.5281/zenodo.21855229](https://doi.org/10.5281/zenodo.21855229)
+- Concept DOI: [10.5281/zenodo.21441309](https://doi.org/10.5281/zenodo.21441309)
+
+This artifact implements and evaluates a declared subset of the historical
+DAIM-OS table-and-signal interface. It is not a replacement for this
+specification repository.
 
 ## What is DAIM?
 
